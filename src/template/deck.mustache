@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Deck</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="cards">
+      {{#cards}}
+        <div class="card">
+          <div class="inner">
+            <h1 class="name">{{ name }}</h1>
+            <p class="cost">{{ cost }}</p>
+            <figure class="image">
+            </figure>
+            <p class="label">{{ label }}</p>
+            {{#effects}}
+              <p class="effect">{{ . }}</p>
+            {{/effects}}
+            {{#size}}
+              <p class="size">{{size}}</p>
+            {{/size}}
+          </div>
+        </div>
+      {{/cards}}
+    </div>
+    <div class="status">
+      <dl>
+        <dt>Count:</dt>
+        <dd>{{ cards.length }}</dd>
+        <dt>Title:</dt>
+        <dd>{{ title }}</dd>
+      </dl>
+    </div>
+  </body>
+</html>

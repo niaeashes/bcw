@@ -1,0 +1,16 @@
+{
+  "name": "bcw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/to_html.mjs",
+  "scripts": {
+    "export": "node ./src/to_html.mjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@notionhq/client": "^0.4.13",
+    "mustache": "^4.2.0",
+    "notionsdk": "^1.16.0"
+  }
+}
